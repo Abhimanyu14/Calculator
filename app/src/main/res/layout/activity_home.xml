@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        tools:context="com.appz.abhi.calculator.MainActivity">
+
+        <TextView
+            android:id="@+id/disp_tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorDisp"
+            android:gravity="end|bottom"
+            android:padding="40dp"
+            android:text="@string/textview"
+            android:textSize="80sp" />
+
+        <GridLayout
+            android:id="@+id/grid_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:columnCount="4"
+            android:rowCount="5">
+
+            <TextView
+                android:id="@+id/ac_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/ac"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/c_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:background="@drawable/ic_back"
+                android:gravity="fill"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/div_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/div" />
+
+            <TextView
+                android:id="@+id/mul_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/mul" />
+
+            <TextView
+                android:id="@+id/digit_7_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_7" />
+
+            <TextView
+                android:id="@+id/digit_8_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_8" />
+
+            <TextView
+                android:id="@+id/digit_9_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_9" />
+
+            <TextView
+                android:id="@+id/minus_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/minus" />
+
+            <TextView
+                android:id="@+id/digit_4_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_4" />
+
+            <TextView
+                android:id="@+id/digit_5_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_5" />
+
+            <TextView
+                android:id="@+id/digit_6_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_6" />
+
+            <TextView
+                android:id="@+id/plus_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/plus" />
+
+            <TextView
+                android:id="@+id/digit_1_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_1" />
+
+            <TextView
+                android:id="@+id/digit_2_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_2" />
+
+            <TextView
+                android:id="@+id/digit_3_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_3" />
+
+            <TextView
+                android:id="@+id/equal_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/equal" />
+
+            <TextView
+                android:id="@+id/mod_tv_id"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:background="@drawable/root"
+                android:gravity="fill"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/digit_0_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/dec_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="@string/dec" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</layout>
